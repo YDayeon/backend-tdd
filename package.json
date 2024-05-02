@@ -4,15 +4,15 @@
   "description": "tdd with express",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon index",
-    "test": "jest --watch",
+    "start": "cross-env NODE_ENV=development nodemon index",
+    "test": "cross-env NODE_ENV=test jest --watch",
     "lint": "eslint ."
   },
   "author": "Dayeon Yoon",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
-    "config": "^3.3.1",
+    "config": "^3.3.11",
     "express": "^4.17.1",
     "express-validator": "^6.6.1",
     "file-type": "^14.7.1",
@@ -29,7 +29,7 @@
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "cross-env": "^7.0.2",
+    "cross-env": "^7.0.3",
     "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
