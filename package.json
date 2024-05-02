@@ -1,0 +1,72 @@
+{
+  "name": "express-ws",
+  "version": "1.2.0",
+  "description": "tdd with express",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "jest --watch",
+    "lint": "eslint ."
+  },
+  "author": "Dayeon Yoon",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "file-type": "^14.7.1",
+    "i18next": "^19.6.3",
+    "i18next-fs-backend": "^1.0.7",
+    "i18next-http-middleware": "^3.0.2",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.11",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.2.0",
+    "sqlite3": "^5.1.7",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.4.0",
+    "jest-watch-typeahead": "^0.6.0",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.0.5",
+    "smtp-server": "^3.7.0",
+    "supertest": "^4.0.2"
+  },
+  "eslint.workingDirectories": [
+    ".src"
+  ],
+  "eslintConfig": {
+    "root": true,
+    "parserOptions": {
+      "ecmaVersion": 2018
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "env": {
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "rules": {
+      "eqeqeq": "warn",
+      "prettier/prettier": "warn"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120
+  }
+}
