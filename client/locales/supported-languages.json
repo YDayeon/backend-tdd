@@ -1,10 +1,10 @@
 [
-	{
-		"language": "en",
-		"flag": "https://www.countryflags.io/us/flat/24.png"
-	},
-	{
-		"language": "tr",
-		"flag": "https://www.countryflags.io/tr/flat/24.png"
+  {
+    "language": "en",
+    "flag": "https://flagsapi.com/GB/flat/64.png"
+  },
+  {
+    "language": "ko",
+    "flag": "https://flagsapi.com/KR/shiny/64.png"
   }
 ]
