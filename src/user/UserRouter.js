@@ -51,4 +51,13 @@ router.post(
   }
 );
 
+router.post('/api/1.0/users/token/:token', async (req, res) => {
+  const token = req.params.token;
+  try {
+    await UserService.activate(token);
+  } catch (error) {
+    return res.status(400).send({ message: req.t(error.message) });
+  }
+  res.send();
+});
 module.exports = router;
