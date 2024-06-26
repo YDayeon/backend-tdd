@@ -9,5 +9,6 @@
   "email_inuse": "이미 사용중인 email입니다.",
   "user_create_success": "사용자가 생성되었습니다.",
   "email_failure": "이메일 실패",
-  "invalid_token": "잘못된 토큰 정보입니다."
+  "invalid_token": "잘못된 토큰 정보입니다.",
+  "validation_failure": "유효성 검사 실패"
 }
